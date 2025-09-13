@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manualidades Creativas - Tu comunidad de inspiración</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Descubre miles de tutoriales de manualidades, DIY y proyectos creativos. Inspírate, crea y comparte con nuestra comunidad.">
+    <meta name="keywords" content="manualidades, DIY, tutoriales, creatividad, porcelana fría, fieltro, papel, costura">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Manualidades</span>
+                    <span class="logo-sub">Creativas</span>
+                </div>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-bar">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Buscar ideas, tutoriales, materiales..." class="search-input">
+                    <div class="search-suggestions">
+                        <div class="suggestion-item">
+                            <i class="fas fa-cut"></i>
+                            <span>Porcelana fría</span>
+                        </div>
+                        <div class="suggestion-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Flores de papel</span>
+                        </div>
+                        <div class="suggestion-item">
+                            <i class="fas fa-scissors"></i>
+                            <span>Muñecos de fieltro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="user-actions">
+                <button class="action-btn" title="Notificaciones">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button class="action-btn" title="Mensajes">
+                    <i class="fas fa-envelope"></i>
+                </button>
+                <button class="action-btn" title="Favoritos">
+                    <i class="far fa-heart"></i>
+                    <span class="favorite-count">12</span>
+                </button>
+                <div class="user-profile">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Perfil" class="profile-img">
+                    <div class="profile-dropdown">
+                        <a href="#profile"><i class="fas fa-user"></i> Mi Perfil</a>
+                        <a href="#boards"><i class="fas fa-th-large"></i> Mis Tableros</a>
+                        <a href="#settings"><i class="fas fa-cog"></i> Configuración</a>
+                        <hr>
+                        <a href="#logout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar-nav">
+        <div class="nav-content">
+            <div class="nav-section">
+                <h3>Explorar</h3>
+                <a href="#home" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Inicio</span>
+                </a>
+                <a href="#trending" class="nav-item">
+                    <i class="fas fa-fire"></i>
+                    <span>Tendencias</span>
+                </a>
+                <a href="#new" class="nav-item">
+                    <i class="fas fa-sparkles"></i>
+                    <span>Nuevos</span>
+                </a>
+            </div>
+            
+            <div class="nav-section">
+                <h3>Categorías</h3>
+                <a href="#categories" class="nav-item">
+                    <i class="fas fa-th-large"></i>
+                    <span>Todas las categorías</span>
+                </a>
+                <a href="#material" class="nav-item">
+                    <i class="fas fa-cut"></i>
+                    <span>Por Material</span>
+                </a>
+                <a href="#theme" class="nav-item">
+                    <i class="fas fa-palette"></i>
+                    <span>Por Tema</span>
+                </a>
+                <a href="#difficulty" class="nav-item">
+                    <i class="fas fa-star"></i>
+                    <span>Por Dificultad</span>
+                </a>
+            </div>
+            
+            <div class="nav-section">
+                <h3>Mi Espacio</h3>
+                <a href="#favorites" class="nav-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Favoritos</span>
+                    <span class="nav-count">12</span>
+                </a>
+                <a href="#boards" class="nav-item">
+                    <i class="fas fa-th-large"></i>
+                    <span>Mis Tableros</span>
+                    <span class="nav-count">5</span>
+                </a>
+                <a href="#creators" class="nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Creadores</span>
+                </a>
+                <a href="#history" class="nav-item">
+                    <i class="fas fa-history"></i>
+                    <span>Recientes</span>
+                </a>
+            </div>
+            
+            <div class="nav-section">
+                <h3>Comunidad</h3>
+                <a href="#challenges" class="nav-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>Desafíos</span>
+                </a>
+                <a href="#groups" class="nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Grupos</span>
+                </a>
+                <a href="#events" class="nav-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Eventos</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav">
+        <a href="#home" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Inicio</span>
+        </a>
+        <a href="#search" class="nav-item">
+            <i class="fas fa-search"></i>
+            <span>Buscar</span>
+        </a>
+        <a href="#favorites" class="nav-item">
+            <i class="fas fa-heart"></i>
+            <span>Favoritos</span>
+        </a>
+        <a href="#boards" class="nav-item">
+            <i class="fas fa-th-large"></i>
+            <span>Tableros</span>
+        </a>
+        <a href="#profile" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>Perfil</span>
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="hero-background">
+                    <div class="hero-pattern"></div>
+                    <div class="hero-gradient"></div>
+                </div>
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-sparkles"></i>
+                        <span>Nuevo contenido cada día</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-main">Crea, comparte</span>
+                        <span class="title-highlight">e inspírate</span>
+                    </h1>
+                    <p class="hero-subtitle">Descubre miles de ideas creativas, tutoriales paso a paso y conecta con una comunidad apasionada por las manualidades</p>
+                    <div class="hero-actions">
+                        <button class="btn-primary btn-large">
+                            <i class="fas fa-rocket"></i>
+                            Explorar Ideas
+                        </button>
+                        <button class="btn-secondary btn-large">
+                            <i class="fas fa-play"></i>
+                            Ver Demo
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Ideas</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Creadores</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1M+</span>
+                            <span class="stat-label">Seguidores</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="floating-card card-1">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Tutorial 1">
+                            <div class="card-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="floating-card card-2">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Tutorial 2">
+                            <div class="card-overlay">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="floating-card card-3">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Tutorial 3">
+                            <div class="card-overlay">
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <div class="section-header">
+                    <h2>Explora por categoría</h2>
+                    <p>Encuentra exactamente lo que buscas</p>
+                </div>
+                <div class="action-grid">
+                    <div class="action-card featured" data-category="material">
+                        <div class="card-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Por Material</h3>
+                            <p>Porcelana, tela, lana, papel...</p>
+                            <span class="card-count">2,500+ ideas</span>
+                        </div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="action-card" data-category="theme">
+                        <div class="card-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Por Tema</h3>
+                            <p>Animales, muñecos, flores...</p>
+                            <span class="card-count">1,800+ ideas</span>
+                        </div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="action-card" data-category="difficulty">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Por Dificultad</h3>
+                            <p>Fácil, intermedio, avanzado</p>
+                            <span class="card-count">Todos los niveles</span>
+                        </div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="action-card" data-category="trending">
+                        <div class="card-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Tendencias</h3>
+                            <p>Lo más popular ahora</p>
+                            <span class="card-count">En vivo</span>
+                        </div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pinterest Style Pins Grid -->
+            <div class="pins-section">
+                <div class="section-header">
+                    <h2>Ideas para ti</h2>
+                    <div class="section-controls">
+                        <div class="filter-tabs">
+                            <button class="filter-tab active" data-filter="all">Todo</button>
+                            <button class="filter-tab" data-filter="trending">Tendencias</button>
+                            <button class="filter-tab" data-filter="new">Nuevos</button>
+                            <button class="filter-tab" data-filter="saved">Guardados</button>
+                        </div>
+                        <div class="view-controls">
+                            <button class="view-btn active" data-view="grid">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="view-btn" data-view="list">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pins-grid" id="pinsGrid">
+                    <!-- Pin 1 - Large -->
+                    <div class="pin pin-large" data-category="porcelana">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Muñecos de porcelana">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="pin-share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                                <button class="pin-more">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                            <div class="pin-badge">Tendencia</div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Muñecos de Porcelana Fría - Tutorial Completo</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="María González">
+                                <span>María González</span>
+                            </p>
+                            <div class="pin-stats">
+                                <span><i class="fas fa-eye"></i> 2.3k</span>
+                                <span><i class="fas fa-heart"></i> 156</span>
+                                <span><i class="fas fa-comment"></i> 23</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pin 2 - Medium -->
+                    <div class="pin pin-medium" data-category="papel">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Flores de papel">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="pin-share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Flores de Papel Realistas</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Ana Martínez">
+                                <span>Ana Martínez</span>
+                            </p>
+                            <div class="pin-stats">
+                                <span><i class="fas fa-eye"></i> 1.8k</span>
+                                <span><i class="fas fa-heart"></i> 89</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pin 3 - Small -->
+                    <div class="pin pin-small" data-category="fieltro">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Animales de fieltro">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Animales de Fieltro</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Carlos Ruiz">
+                                <span>Carlos Ruiz</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pin 4 - Medium -->
+                    <div class="pin pin-medium" data-category="costura">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Bolsos de tela">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="pin-share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                            <div class="pin-badge new">Nuevo</div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Bolsos de Tela Personalizados</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Laura Sánchez">
+                                <span>Laura Sánchez</span>
+                            </p>
+                            <div class="pin-stats">
+                                <span><i class="fas fa-eye"></i> 945</span>
+                                <span><i class="fas fa-heart"></i> 67</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pin 5 - Large -->
+                    <div class="pin pin-large" data-category="decoracion">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Decoración navideña">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="pin-share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                                <button class="pin-more">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Decoración Navideña DIY</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Elena García">
+                                <span>Elena García</span>
+                            </p>
+                            <div class="pin-stats">
+                                <span><i class="fas fa-eye"></i> 3.2k</span>
+                                <span><i class="fas fa-heart"></i> 234</span>
+                                <span><i class="fas fa-comment"></i> 45</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pin 6 - Small -->
+                    <div class="pin pin-small" data-category="jewelry">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Joyas de porcelana">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Joyas de Porcelana</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Miguel Torres">
+                                <span>Miguel Torres</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pin 7 - Medium -->
+                    <div class="pin pin-medium" data-category="macrame">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Macramé moderno">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="pin-share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                            <div class="pin-badge">Viral</div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Macramé Moderno para Principiantes</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Sofia López">
+                                <span>Sofia López</span>
+                            </p>
+                            <div class="pin-stats">
+                                <span><i class="fas fa-eye"></i> 4.1k</span>
+                                <span><i class="fas fa-heart"></i> 312</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pin 8 - Small -->
+                    <div class="pin pin-small" data-category="ceramica">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Cerámica artesanal">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Cerámica Artesanal</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Diego Martín">
+                                <span>Diego Martín</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pin 9 - Large -->
+                    <div class="pin pin-large" data-category="bordado">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Bordado moderno">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="pin-share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                                <button class="pin-more">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                            <div class="pin-badge">Destacado</div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Bordado Moderno - Técnicas Avanzadas</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Carmen Vega">
+                                <span>Carmen Vega</span>
+                            </p>
+                            <div class="pin-stats">
+                                <span><i class="fas fa-eye"></i> 5.7k</span>
+                                <span><i class="fas fa-heart"></i> 423</span>
+                                <span><i class="fas fa-comment"></i> 67</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pin 10 - Medium -->
+                    <div class="pin pin-medium" data-category="origami">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Origami complejo">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="pin-share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Origami Complejo - Animales 3D</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Hiroshi Tanaka">
+                                <span>Hiroshi Tanaka</span>
+                            </p>
+                            <div class="pin-stats">
+                                <span><i class="fas fa-eye"></i> 2.9k</span>
+                                <span><i class="fas fa-heart"></i> 198</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pin 11 - Small -->
+                    <div class="pin pin-small" data-category="pintura">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Pintura en tela">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Pintura en Tela</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Isabel Ruiz">
+                                <span>Isabel Ruiz</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pin 12 - Medium -->
+                    <div class="pin pin-medium" data-category="crochet">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Crochet moderno">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="pin-share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                            <div class="pin-badge new">Nuevo</div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Crochet Moderno - Amigurumi</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Patricia Moreno">
+                                <span>Patricia Moreno</span>
+                            </p>
+                            <div class="pin-stats">
+                                <span><i class="fas fa-eye"></i> 3.4k</span>
+                                <span><i class="fas fa-heart"></i> 267</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pin 13 - Small -->
+                    <div class="pin pin-small" data-category="madera">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Talla en madera">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Talla en Madera</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Roberto Silva">
+                                <span>Roberto Silva</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pin 14 - Large -->
+                    <div class="pin pin-large" data-category="resina">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Arte con resina">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="pin-share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                                <button class="pin-more">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                            <div class="pin-badge">Tendencia</div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Arte con Resina Epoxi - Técnicas Avanzadas</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Lucía Fernández">
+                                <span>Lucía Fernández</span>
+                            </p>
+                            <div class="pin-stats">
+                                <span><i class="fas fa-eye"></i> 6.2k</span>
+                                <span><i class="fas fa-heart"></i> 489</span>
+                                <span><i class="fas fa-comment"></i> 89</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pin 15 - Medium -->
+                    <div class="pin pin-medium" data-category="cuero">
+                        <div class="pin-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Trabajo en cuero">
+                            <div class="pin-overlay">
+                                <button class="pin-save">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="pin-share">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pin-content">
+                            <h3>Trabajo en Cuero - Carteras Artesanales</h3>
+                            <p class="pin-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Alejandro Castro">
+                                <span>Alejandro Castro</span>
+                            </p>
+                            <div class="pin-stats">
+                                <span><i class="fas fa-eye"></i> 2.1k</span>
+                                <span><i class="fas fa-heart"></i> 145</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="load-more">
+                    <button class="btn-load-more">
+                        <i class="fas fa-plus"></i>
+                        Cargar más ideas
+                    </button>
+                </div>
+            </div>
+
+            <!-- Trending Now Section -->
+            <div class="trending-section">
+                <div class="section-header">
+                    <h2>Tendencias del momento</h2>
+                    <p>Lo que está arrasando en la comunidad</p>
+                </div>
+                <div class="trending-grid">
+                    <div class="trending-card">
+                        <div class="trending-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Tendencia 1">
+                            <div class="trending-badge">#1</div>
+                        </div>
+                        <div class="trending-content">
+                            <h3>Macramé Boho</h3>
+                            <p>+2.3k pins esta semana</p>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <div class="trending-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Tendencia 2">
+                            <div class="trending-badge">#2</div>
+                        </div>
+                        <div class="trending-content">
+                            <h3>Resina Epoxi</h3>
+                            <p>+1.8k pins esta semana</p>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <div class="trending-image">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Tendencia 3">
+                            <div class="trending-badge">#3</div>
+                        </div>
+                        <div class="trending-content">
+                            <h3>Crochet Amigurumi</h3>
+                            <p>+1.5k pins esta semana</p>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <div class="trending-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Tendencia 4">
+                            <div class="trending-badge">#4</div>
+                        </div>
+                        <div class="trending-content">
+                            <h3>Bordado Moderno</h3>
+                            <p>+1.2k pins esta semana</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenges Section -->
+            <div class="challenges-section">
+                <div class="section-header">
+                    <h2>Desafíos de la semana</h2>
+                    <p>Únete a la comunidad y comparte tus creaciones</p>
+                </div>
+                <div class="challenges-grid">
+                    <div class="challenge-card featured">
+                        <div class="challenge-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Desafío 1">
+                            <div class="challenge-overlay">
+                                <div class="challenge-info">
+                                    <h3>Desafío Navideño</h3>
+                                    <p>Crea decoraciones únicas para Navidad</p>
+                                    <div class="challenge-stats">
+                                        <span><i class="fas fa-users"></i> 2.3k participantes</span>
+                                        <span><i class="fas fa-clock"></i> 5 días restantes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="challenge-card">
+                        <div class="challenge-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Desafío 2">
+                            <div class="challenge-overlay">
+                                <div class="challenge-info">
+                                    <h3>Minimalismo DIY</h3>
+                                    <p>Proyectos simples pero impactantes</p>
+                                    <div class="challenge-stats">
+                                        <span><i class="fas fa-users"></i> 1.8k participantes</span>
+                                        <span><i class="fas fa-clock"></i> 3 días restantes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="challenge-card">
+                        <div class="challenge-image">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Desafío 3">
+                            <div class="challenge-overlay">
+                                <div class="challenge-info">
+                                    <h3>Upcycling Creativo</h3>
+                                    <p>Dale nueva vida a objetos viejos</p>
+                                    <div class="challenge-stats">
+                                        <span><i class="fas fa-users"></i> 1.5k participantes</span>
+                                        <span><i class="fas fa-clock"></i> 7 días restantes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Creators Section -->
+            <div class="featured-creators-section">
+                <div class="section-header">
+                    <h2>Creadores destacados</h2>
+                    <p>Conoce a los artistas más influyentes de la comunidad</p>
+                </div>
+                <div class="creators-carousel">
+                    <div class="creator-card-large">
+                        <div class="creator-header">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="María González" class="creator-avatar-large">
+                            <div class="creator-info">
+                                <h3>María González</h3>
+                                <p>Especialista en porcelana fría</p>
+                                <div class="creator-stats">
+                                    <span>45 tutoriales</span>
+                                    <span>•</span>
+                                    <span>2.3k seguidores</span>
+                                </div>
+                            </div>
+                            <button class="btn-follow">Seguir</button>
+                        </div>
+                        <div class="creator-gallery">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Trabajo 1">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Trabajo 2">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Trabajo 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular Categories -->
+            <div class="popular-categories">
+                <div class="section-header">
+                    <h2>Categorías populares</h2>
+                    <p>Explora por tipo de manualidad</p>
+                </div>
+                <div class="category-tags">
+                    <span class="category-tag"><i class="fas fa-cut"></i> Costura</span>
+                    <span class="category-tag"><i class="fas fa-paint-brush"></i> Pintura</span>
+                    <span class="category-tag"><i class="fas fa-scissors"></i> Papel</span>
+                    <span class="category-tag"><i class="fas fa-yarn"></i> Tejido</span>
+                    <span class="category-tag"><i class="fas fa-gem"></i> Porcelana</span>
+                    <span class="category-tag"><i class="fas fa-leaf"></i> Naturaleza</span>
+                    <span class="category-tag"><i class="fas fa-palette"></i> Macramé</span>
+                    <span class="category-tag"><i class="fas fa-droplet"></i> Resina</span>
+                    <span class="category-tag"><i class="fas fa-hammer"></i> Madera</span>
+                    <span class="category-tag"><i class="fas fa-ring"></i> Joyería</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="section">
+            <div class="section-header">
+                <h2>Categorías</h2>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="material">Material</button>
+                    <button class="filter-tab" data-filter="theme">Tema</button>
+                    <button class="filter-tab" data-filter="technique">Técnica</button>
+                </div>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card" data-type="material">
+                    <div class="category-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Porcelana Fría</h3>
+                    <p>45 tutoriales</p>
+                </div>
+                
+                <div class="category-card" data-type="material">
+                    <div class="category-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Fieltro</h3>
+                    <p>32 tutoriales</p>
+                </div>
+                
+                <div class="category-card" data-type="material">
+                    <div class="category-icon">
+                        <i class="fas fa-scissors"></i>
+                    </div>
+                    <h3>Papel</h3>
+                    <p>67 tutoriales</p>
+                </div>
+                
+                <div class="category-card" data-type="material">
+                    <div class="category-icon">
+                        <i class="fas fa-yarn"></i>
+                    </div>
+                    <h3>Lana</h3>
+                    <p>28 tutoriales</p>
+                </div>
+                
+                <div class="category-card" data-type="theme">
+                    <div class="category-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3>Animales</h3>
+                    <p>89 tutoriales</p>
+                </div>
+                
+                <div class="category-card" data-type="theme">
+                    <div class="category-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Comida</h3>
+                    <p>56 tutoriales</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tutorial Detail Section -->
+        <section id="tutorial-detail" class="section">
+            <div class="tutorial-detail">
+                <div class="tutorial-video">
+                    <div class="video-container">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tutorial">
+                        <div class="video-overlay">
+                            <button class="play-button-large">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video-controls">
+                        <button class="btn-control"><i class="fas fa-download"></i> Descargar PDF</button>
+                        <button class="btn-control favorite"><i class="far fa-heart"></i> Guardar</button>
+                        <button class="btn-control"><i class="fas fa-share"></i> Compartir</button>
+                    </div>
+                </div>
+                
+                <div class="tutorial-content">
+                    <h1>Muñecos de Porcelana Fría - Tutorial Completo</h1>
+                    
+                    <div class="tutorial-author-detail">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="María González">
+                        <div class="author-info">
+                            <h3>María González</h3>
+                            <p>Artista especializada en porcelana fría</p>
+                            <div class="author-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                        <button class="btn-follow">Seguir</button>
+                    </div>
+                    
+                    <div class="tutorial-stats-detail">
+                        <span><i class="fas fa-eye"></i> 2,347 visualizaciones</span>
+                        <span><i class="fas fa-heart"></i> 156 me gusta</span>
+                        <span><i class="fas fa-clock"></i> 15 minutos</span>
+                        <span><i class="fas fa-star"></i> 4.8 (23 reseñas)</span>
+                    </div>
+                    
+                    <div class="tutorial-description">
+                        <h3>Descripción</h3>
+                        <p>Aprende a crear hermosos muñecos de porcelana fría paso a paso. Este tutorial incluye técnicas básicas y avanzadas para que puedas crear tus propias figuras únicas.</p>
+                    </div>
+                    
+                    <div class="tutorial-materials">
+                        <h3>Materiales necesarios</h3>
+                        <ul>
+                            <li>Porcelana fría blanca</li>
+                            <li>Pinturas acrílicas</li>
+                            <li>Pinceles de diferentes tamaños</li>
+                            <li>Herramientas de modelado</li>
+                            <li>Barniz protector</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creators Section -->
+        <section id="creators" class="section">
+            <div class="section-header">
+                <h2>Creadores Destacados</h2>
+                <p>Conoce a los artistas detrás de los mejores tutoriales</p>
+            </div>
+            
+            <div class="creators-grid">
+                <div class="creator-card">
+                    <div class="creator-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="María González">
+                        <div class="creator-badge">Destacada</div>
+                    </div>
+                    <h3>María González</h3>
+                    <p>Especialista en porcelana fría</p>
+                    <div class="creator-stats">
+                        <span>45 tutoriales</span>
+                        <span>2.3k seguidores</span>
+                    </div>
+                    <div class="creator-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <button class="btn-follow">Seguir</button>
+                </div>
+                
+                <div class="creator-card">
+                    <div class="creator-avatar">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Ana Martínez">
+                    </div>
+                    <h3>Ana Martínez</h3>
+                    <p>Experta en flores de papel</p>
+                    <div class="creator-stats">
+                        <span>32 tutoriales</span>
+                        <span>1.8k seguidores</span>
+                    </div>
+                    <div class="creator-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <button class="btn-follow">Seguir</button>
+                </div>
+                
+                <div class="creator-card">
+                    <div class="creator-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Carlos Ruiz">
+                    </div>
+                    <h3>Carlos Ruiz</h3>
+                    <p>Maestro en técnicas de costura</p>
+                    <div class="creator-stats">
+                        <span>28 tutoriales</span>
+                        <span>1.5k seguidores</span>
+                    </div>
+                    <div class="creator-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <button class="btn-follow">Seguir</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Favorites Section -->
+        <section id="favorites" class="section">
+            <div class="section-header">
+                <h2>Mis Favoritos</h2>
+                <p>Tutoriales que has guardado</p>
+            </div>
+            
+            <div class="favorites-grid">
+                <div class="tutorial-card">
+                    <div class="tutorial-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tutorial favorito">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <button class="btn-remove-favorite"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="tutorial-info">
+                        <h3>Muñecos de Porcelana Fría</h3>
+                        <p class="tutorial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Autor">
+                            <span>María González</span>
+                        </p>
+                        <div class="tutorial-stats">
+                            <span><i class="fas fa-clock"></i> 15 min</span>
+                            <span><i class="fas fa-heart"></i> 156</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+        <div class="loading-spinner">
+            <i class="fas fa-palette fa-spin"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
